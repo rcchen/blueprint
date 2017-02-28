@@ -57,7 +57,7 @@ export interface ITruncatedFormatProps extends IProps {
 
     /**
      * The string that is appended to the display string if it is truncated.
-     * @default "..."
+     * @default "…"
      */
     truncationSuffix?: string;
 }
@@ -72,7 +72,7 @@ export class TruncatedFormat extends React.Component<ITruncatedFormatProps, ITru
         preformatted: true,
         showPopover: TruncatedPopoverMode.WHEN_TRUNCATED,
         truncateLength: 80,
-        truncationSuffix: "...",
+        truncationSuffix: "…",
     };
 
     public state: ITruncatedFormatState = { isTruncated: false };
